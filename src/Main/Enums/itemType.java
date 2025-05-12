@@ -1,4 +1,4 @@
-package Main;
+package Main.Enums;
 public enum itemType {
     COKE ,
     PEPSI,

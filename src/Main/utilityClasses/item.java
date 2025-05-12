@@ -1,4 +1,6 @@
-package Main;
+package Main.utilityClasses;
+
+import Main.Enums.itemType;
 
 public class item {
 

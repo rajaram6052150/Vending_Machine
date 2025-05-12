@@ -1,4 +1,4 @@
-package Main;
+package Main.utilityClasses;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +33,15 @@ public class inventory {
                 i.removeItem();
             }
         }
+    }
+
+    public int getPrice(int code) {
+        for (itemShelf i : inventory) {
+            if (i.code == code){
+                return i.getPrice(i);
+            }
+        }
+        return 0;
     }
 
     public boolean getItem(int code){

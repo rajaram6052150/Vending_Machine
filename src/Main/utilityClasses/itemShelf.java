@@ -1,4 +1,4 @@
-package Main;
+package Main.utilityClasses;
 import java.util.*;
 
 public class itemShelf {
@@ -10,6 +10,13 @@ public class itemShelf {
     public itemShelf(int code){
         this.code = code;
         this.shelf = new ArrayList<>();
+    }
+
+    public int getPrice(itemShelf i){
+        for (item it : shelf){
+            return it.getPrice();
+        }
+        return 0;
     }
 
     public void addItem(item i){

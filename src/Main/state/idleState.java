@@ -1,7 +1,6 @@
 package Main.state;
 import Main.state.selectionState;
 
-
 public class idleState implements vendingMachineState{
 
     public idleState(){
@@ -20,6 +19,6 @@ public class idleState implements vendingMachineState{
             return new outOfStockState();
         }
 
-        return new selectionState();
+        return new hasMoneyState();
     }
 }

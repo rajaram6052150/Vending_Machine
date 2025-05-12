@@ -2,7 +2,10 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 package Main;
 
+import Main.Enums.coins;
+import Main.Enums.itemType;
 import Main.state.vendingMachineContext;
+import Main.utilityClasses.item;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +23,9 @@ public class Main {
         }
 
         context.inv1.showItems();
+
+        context.insertCoin(coins.ONE_RUPEE);
+        context.insertCoin(coins.TEN_RUPEES);
 
         context.chooseProduct(102);
         context.chooseProduct(102);
